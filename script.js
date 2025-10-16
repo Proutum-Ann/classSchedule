@@ -3,12 +3,13 @@ let jsonFile = ''
 fetch("annieSchedule.json")
 	.then((response) => response.json())
 	.then((data) => {
+		console.log(data)
 		jsonFile = data
 
 		jsonFile.forEach(classes => {
 			
-			document.getElementById('out').innerHTML = `<p>${classes.period}</p>`
+			document.getElementById('out').innerHTML = `${classes.period}`
 		})
 	})
 
-/* document.getElementById().insertAjacentHTML("afterend", stuff here) */
+/* document.getElementById('out').insertAjacentHTML("afterend", stuff here) */
