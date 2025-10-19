@@ -54,7 +54,7 @@ async function loadSchedule(fileName) {
 				<div class="col-12 col-md-4 my-2">
 					<div class="card border-10 px-2 py-1 h-100" style="background: ${cardBG}">
 						<h5 class="card-header border-0" style="background-color: ${headerBG}; border-radius: 10px">${classes.className}</h5>
-						<p class="card-text">
+						<p class="card-text p-2">
 							<b>Period ${classes.period}</b><br>
 							<b>Teacher:</b> ${classes.teacher.join(', ')}<br>
 							<b>Room:</b> ${classes.roomNumber}<br>

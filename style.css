@@ -1,0 +1,45 @@
+body {
+    background-color: #fff0a3!important;
+    color: #3b3825!important;
+}
+
+.card, select {
+    font-family: "kopik", sans-serif!important;
+    color: #3b3825!important
+}
+
+select {
+    font-weight: 700;
+    padding: .5%
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "p22-morris-golden", sans-serif;
+}
+
+.card-header {
+    color: #2e1501;
+    font-weight: 700;
+}
+
+
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.1) rotate(5deg);
+    z-index: 10;
+}
+
+select {
+    background-color: aquamarine;
+    border-radius: 10px;   
+    outline: none;
+    border: none!important;
+    transition: .5s;
+}
+
+option {
+    background-color: aqua;
+}

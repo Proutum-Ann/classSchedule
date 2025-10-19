@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Class Schedules</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -9,7 +9,7 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
-        <link src="style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -18,24 +18,22 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://use.typekit.net/rrp5qif.css">
     </head>
 
     <body>
-        <header>
-            <!-- place navbar here -->
-        </header>
-        <main style="overflow-x: hidden;">
-            <select id="studentList">
-                <option selected value="annie">Annie</option>
-                <option value="layla">Layla</option>
-                <option value="kristen">Kristen</option>
-                <option value="elizabeth">Elizabeth</option>
-            </select>
+        <main class="p-2 w-100" style="overflow-x: hidden;">
+            <div class="w-100 text-center">
+                <h3>Pick a name and see their schedule!</h3>
+                <select class="text-center" id="studentList">
+                    <option selected value="annie">Annie</option>
+                    <option value="layla">Layla</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="elizabeth">Elizabeth</option>
+                </select>
+            </div>
             <div class="row justify-content-center p-4" id="out"></div>
         </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script src="script.js"></script>
         <script
