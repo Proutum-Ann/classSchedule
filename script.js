@@ -24,14 +24,15 @@ async function loadSchedule(fileName) {
                 </div>
             `;
             output.insertAdjacentHTML("beforeend", classInfo);
+
         });
     } catch (error) {
         console.error("Error loading schedule:", error);
-        document.getElementById('out').innerHTML = "Error loading schedule.";
+        out.innerHTML = "Error loading schedule.";
     }
 }
 
-loadSchedule('annie');
+loadSchedule(dropdown.value);
 
 document.getElementById('studentList').addEventListener('change', (event) => {
     const selected = event.target.value;

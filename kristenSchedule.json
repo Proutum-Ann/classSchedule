@@ -7,11 +7,11 @@
         "subjectArea": "Science"
     },
     {
-        "className": "Physical Education",
+        "className": "Health 12",
         "teacher": ["Mrs. Scollo"],
-        "roomNumber": "GYM",
+        "roomNumber": "C128",
         "period": 2,
-        "subjectArea": "Physical Education"
+        "subjectArea": "Health"
     },
     {
         "className": "AP Calculus AB",
