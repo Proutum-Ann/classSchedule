@@ -13,10 +13,14 @@ async function loadSchedule(fileName) {
 
         output.innerHTML = '';
 
+		// Generate a card for each class
+
         data.forEach(classes => {
 
 			let headerBG = ''
 			let cardBG = ''
+
+			//Change colors based off of subject
 
 			if (classes.subjectArea === "Math") {
 				headerBG = '#264eff'
@@ -36,6 +40,7 @@ async function loadSchedule(fileName) {
 				headerBG = '#8d8d8d'
 			}
 
+			//change color based off of hallway
 			if (classes.roomNumber.startsWith("A")) {
 				cardBG = '#ffdcda'
 			} else if (classes.roomNumber.startsWith("B")) {
@@ -50,6 +55,7 @@ async function loadSchedule(fileName) {
 				cardBG = '#fff'
 			}
 
+			//Actual card
             const classInfo = `
 				<div class="col-12 col-md-4 my-2">
 					<div class="card border-10 px-2 py-1 h-100" style="background: ${cardBG}">
@@ -74,21 +80,8 @@ async function loadSchedule(fileName) {
 
 loadSchedule(dropdown.value);
 
+//I'm gonna explode
 document.getElementById('studentList').addEventListener('change', (event) => {
     const selected = event.target.value;
     loadSchedule(selected);
 });
-
-
-/* fetch(`${student}Schedule.json`)
-	.then((response) => response.json())
-	.then((data) => {
-		console.log(data)
-		jsonFile = data
-
-		jsonFile.forEach(classes => {
-			
-			document.getElementById('out').innerHTML = `${classes.period}`
-		})
-	}) */
-/* document.getElementById('out').insertAjacentHTML("afterend", stuff here) */
