@@ -1,0 +1,57 @@
+[
+    {
+        "className": "Honors Cybersecurity and Computer programming" ,
+        "teacher": ["Mrs. Rehwinkel"],
+        "roomNumber": "A234",
+        "period": 1,
+        "subjectArea": "Technology"
+    },
+
+    {
+        "className": "Honors NJIT IS219 Advanced Website Development WDP" ,
+        "teacher": ["Mr. Kilgore"],
+        "roomNumber": "B111",
+        "period": 2,
+        "subjectArea": "Technology"
+    },
+
+    {
+        "className": "Pre Calculus" ,
+        "teacher": ["Mr. Ploe"],
+        "roomNumber": "E215",
+        "period": 3,
+        "subjectArea": "Mathematics"
+    },
+
+    {
+        "className": "BCC ENG121 The Writing Process" ,
+        "teacher": ["Mr. Sauter"],
+        "roomNumber": "E111",
+        "period": 4,
+        "subjectArea": "English"
+    },
+
+    {
+        "className": "AP Computer Science A" ,
+        "teacher": ["Ms. Rehwinkel"],
+        "roomNumber": "A234",
+        "period": 5,
+        "subjectArea": "Technology"
+    },
+
+    {
+        "className": "Finacial Literacy" ,
+        "teacher": ["Mr. Morgan"],
+        "roomNumber": "A132",
+        "period": 6,
+        "subjectArea": "Finance"
+    },
+
+    {
+        "className": "Physical Education" ,
+        "teacher": ["Mrs. Keil"],
+        "roomNumber": "GYM",
+        "period": 7,
+        "subjectArea": "Physical Education"
+    }
+]
