@@ -20,7 +20,7 @@
         "teacher": ["Mr. Ploe"],
         "roomNumber": "E215",
         "period": 3,
-        "subjectArea": "Mathematics"
+        "subjectArea": "Math"
     },
 
     {
@@ -44,7 +44,7 @@
         "teacher": ["Mr. Morgan"],
         "roomNumber": "A132",
         "period": 6,
-        "subjectArea": "Finance"
+        "subjectArea": "Miscellaneous"
     },
 
     {

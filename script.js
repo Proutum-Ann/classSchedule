@@ -14,14 +14,54 @@ async function loadSchedule(fileName) {
         output.innerHTML = '';
 
         data.forEach(classes => {
+
+			let headerBG = ''
+			let cardBG = ''
+
+			if (classes.subjectArea === "Math") {
+				headerBG = '#264eff'
+			} else if (classes.subjectArea === "English") {
+				headerBG = '#2dff1a'
+			} else if (classes.subjectArea === "Science") {
+				headerBG = '#3fffff'
+			} else if (classes.subjectArea === "Technology") {
+				headerBG = '#a9a2ff'
+			} else if (classes.subjectArea === "Physical Education" || classes.subjectArea === "Health") {
+				headerBG = '#81ff76'
+			} else if (classes.subjectArea === "Visual Arts" || classes.subjectArea === "Performing Arts") {
+				headerBG = '#ecff40'
+			} else if (classes.subjectArea === "Social Studies") {
+				headerBG = '#91ca85'
+			} else {
+				headerBG = '#8d8d8d'
+			}
+
+			if (classes.roomNumber.startsWith("A")) {
+				cardBG = '#ffdcda'
+			} else if (classes.roomNumber.startsWith("B")) {
+				cardBG = '#d1f8ff'
+			} else if (classes.roomNumber.startsWith("C") || classes.roomNumber === "GYM") {
+				cardBG = '#d3ffc8'
+			} else if (classes.roomNumber.startsWith("D")) {
+				cardBG = '#fff4d1'
+			} else if (classes.roomNumber.startsWith("E")) {
+				cardBG = '#d1d4ff'
+			} else {
+				cardBG = '#fff'
+			}
+
             const classInfo = `
-                <div>
-                    <strong>Period ${classes.period}:</strong> ${classes.className}<br>
-                    Teacher: ${classes.teacher.join(', ')}<br>
-                    Room: ${classes.roomNumber}<br>
-                    Subject: ${classes.subjectArea}
-                    <hr>
-                </div>
+				<div class="col-12 col-md-4 my-2">
+					<div class="card border-10 px-2 py-1 h-100" style="background: ${cardBG}">
+						<h5 class="card-header border-0" style="background-color: ${headerBG}; border-radius: 10px">${classes.className}</h5>
+						<p class="card-text">
+							<b>Period ${classes.period}</b><br>
+							<b>Teacher:</b> ${classes.teacher.join(', ')}<br>
+							<b>Room:</b> ${classes.roomNumber}<br>
+							<b>Subject:</b> ${classes.subjectArea}
+						</p>
+					</div>
+				</div>
             `;
             output.insertAdjacentHTML("beforeend", classInfo);
 

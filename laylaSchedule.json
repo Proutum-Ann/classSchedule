@@ -4,7 +4,7 @@
     "className" : "AP US Government and Politics",
     "teacher" : ["Mr. Yang"],
     "roomNumber" : "A121",
-    "subjectArea" : "Government"
+    "subjectArea" : "Social Studies"
   },
   {
     "period" : 2,
@@ -39,7 +39,7 @@
     "className" : "Criminology and Law",
     "teacher" : ["Mrs. Quinn"],
     "roomNumber" : "A107",
-    "subjectArea" : "Social Sciences"
+    "subjectArea" : "Social Studies"
   }, 
   {
     "period" : 7,
