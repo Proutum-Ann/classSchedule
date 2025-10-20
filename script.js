@@ -93,10 +93,3 @@ document.getElementById('studentList').addEventListener('change', (event) => {
     const selected = event.target.value;
     loadSchedule(selected);
 });
-
-//keydown stuff
-addEventListener("keydown", (event) => {
-	h
-})
-
-onkeydown = (event) => { }
