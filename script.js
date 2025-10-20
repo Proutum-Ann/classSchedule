@@ -80,7 +80,7 @@ async function loadSchedule(fileName) {
             output.insertAdjacentHTML("beforeend", classInfo);
         });
     } catch (error) {
-        console.error("Error loading schedule:", error);
+        console.error("Error loading json file:", error);
         out.innerHTML = "Error loading schedule.";
     }
 }
