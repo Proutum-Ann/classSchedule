@@ -3,7 +3,7 @@ body {
     color: #3b3825!important;
 }
 
-.card, select {
+.card, select, #out {
     font-family: "kopik", sans-serif!important;
     color: #3b3825!important
 }

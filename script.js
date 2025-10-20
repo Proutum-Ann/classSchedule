@@ -1,12 +1,11 @@
 let jsonFile = ''
 const dropdown = document.getElementById("studentList");
-const out = document.getElementById("out");
 
 
 async function loadSchedule(fileName) {
     try {
         const output = document.getElementById('out');
-        output.innerHTML = "Loading...";
+        output.innerHTML = "Loading schedule...";
 
         const response = await fetch(`${fileName}Schedule.json`);
         const data = await response.json();
